@@ -12,6 +12,11 @@
         />
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./style/style.css" />
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
         
         <script>
          tailwind.config = {
@@ -27,6 +32,13 @@
     },
  };
         </script>
+
+        <!-- style -->
+         <style> 
+          body{
+            font-family: "Lexend";
+          }
+         </style>
         </head>        
 <body class="">
 <header class=" lg:px-0 px-3 sticky top-0 w-full pb-9 backdrop-filter backdrop-blur-lg bg-opacity-30">
@@ -57,7 +69,7 @@
 
     <div class="flex flex-row justify-center space-x-4 items-center mt-16">
         <button class="btn bg-pColor px-5 hover:bg-pHColor" id="DonationBtn">Donation</button>
-        <button class="btn btn-outline px-6 text-colors text-xl" id="historyBtn">History</button>
+        <button class="btn px-6 text-colors text-xl" id="historyBtn">History</button>
     </div>
     
 
@@ -67,7 +79,7 @@
 
 
     <!-- card number - 01 -->
-    <section id="card-section" class="hidden">
+    <section id="card-section" class="">
         <div class="mt-8 border rounded-xl lg:p-10 p-5">
           <div class="flex lg:flex-row flex-col gap-8 justify-between">
             <figure>
@@ -143,15 +155,8 @@
     </section>
   <!-- history section -->
    <section id="history-section" class="">
-    <div class="card bg-base-100 w-96 shadow-xl">
-      <div class="card-body">
-        <h2 class="card-title">Card title!</h2>
-        <p>If a dog chews shoes whose shoes does he choose?</p>
-        <div class="card-actions justify-end">
-          <button class="btn btn-primary">Buy Now</button>
-        </div>
-      </div>
-    </div>
+   
+  
    </section>
 </main>
 <footer>
@@ -161,13 +166,16 @@
 <!-- Open the modal using ID.showModal() method -->
 <!-- <button class="btn" onclick="my_modal_5.showModal()">open modal</button> -->
 <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
-  <div class="modal-box">
-    <h3 class="text-lg font-bold">Hello!</h3>
-    <p class="py-4">Press ESC key or click the button below to close</p>
+  <div class="modal-box flex flex-col items-center">
+    <h3 class="text-lg font-bold">Congratulations!</h3>
+    <img src="./assets/coin.png" alt="">
+    <p class="py-4">You have donated for humankind</p>
+    <h4>Successfully</h4>
+
     <div class="modal-action">
       <form method="dialog">
         <!-- if there is a button in form, it will close the modal -->
-        <button class="btn">Close</button>
+        <button class="btn">Close confirmation</button>
       </form>
     </div>
   </div>
