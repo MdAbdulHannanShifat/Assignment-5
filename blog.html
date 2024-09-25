@@ -12,7 +12,14 @@
         />
         <script src="https://cdn.tailwindcss.com"></script>
         <link rel="stylesheet" href="./style/style.css" />
-        
+
+        <!-- Google font -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+        <!-- Font awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />        
         <script>
          tailwind.config = {
           theme: {
@@ -27,6 +34,12 @@
     },
  };
         </script>
+                <!-- style -->
+                <style> 
+                  body{
+                    font-family: "Lexend";
+                  }
+                 </style>
         </head>        
 <body>
   <header class=" lg:px-0 px-3 sticky top-0 w-full pb-9 backdrop-filter backdrop-blur-lg bg-opacity-30">
@@ -59,7 +72,11 @@
    
 
 <main class=" w-11/12 mx-auto">
+<div class="flex items-start gap-2"> <h2 class="text-2xl font-bold mb-8">Important FAQ</h2>
+  <i class="fa-solid text-2xl fa-question"></i></div>
+
   <div class="join join-vertical w-full">
+
     <div class="collapse collapse-arrow join-item border-base-300 border">
       <input type="radio" name="my-accordion-4" checked="checked" />
       <div class="collapse-title text-xl font-medium">Click to open this one and close others</div>
